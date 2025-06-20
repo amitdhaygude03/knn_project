@@ -44,6 +44,12 @@ One of the following Iris species:
 </p>
 
 
+## 🖼️ Demo Preview
+
+![Iris KNN Demo](demo_screenshot.jpg)
+
+
+
 👤 Connect With Me
 <p align="left"> <a href="https://www.linkedin.com/in/amitdhaygude22/" target="_blank"> <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Amit Dhaygude LinkedIn" height="30" width="40" /> </a> </p>
 
