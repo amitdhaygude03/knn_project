@@ -42,19 +42,14 @@ One of the following Iris species:
   <a href="https://numpy.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" alt="numpy" width="40" height="40"/></a>
 </p>
 
----
-
-## ⚙️ How to Run Locally
-
-1. Clone this repository
-2. Install requirements:
-   ```bash
-   pip install -r requirements.txt
-
 
 👤 Connect With Me
 <p align="left"> <a href="https://www.linkedin.com/in/amitdhaygude22/" target="_blank"> <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Amit Dhaygude LinkedIn" height="30" width="40" /> </a> </p>
+
 📧 Email: amitdhaygude22@gmail.com
+
+
+
 
 📁 File Structure
 text
