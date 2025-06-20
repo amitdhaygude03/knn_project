@@ -44,9 +44,7 @@ One of the following Iris species:
 </p>
 
 
-## 🖼️ Demo Preview
-
-![Iris KNN Demo](demo_screenshot.jpg)
+![Iris KNN Demo](assets/demo_screenshot.jpg)
 
 
 
