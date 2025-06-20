@@ -1,39 +1,25 @@
 import streamlit as st
 import numpy as np
-import pickle
+import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
 
-# Train a KNN model (or load if you've already trained and saved it)
-def train_knn_model():
-    from sklearn.preprocessing import LabelEncoder
-    import pandas as pd
-
-    # Load dataset
-    data = pd.read_csv("iris.csv")  # Make sure this file is present
-
+# Load and train model inline to avoid pickle compatibility issues
+@st.cache_resource
+def train_model():
+    data = pd.read_csv("iris.csv")
     X = data.drop(columns=["species"])
     y = data["species"]
 
-    # Encode target labels
     le = LabelEncoder()
     y_encoded = le.fit_transform(y)
 
-    # Train the model
     model = KNeighborsClassifier(n_neighbors=3)
     model.fit(X, y_encoded)
 
-    # Save the model and label encoder
-    with open("knn_model.pkl", "wb") as f:
-        pickle.dump((model, le), f)
+    return model, le
 
-# Uncomment this to train and save model when running for the first time
-# train_knn_model()
-
-# Load trained model and label encoder
-with open("knn_model.pkl", "rb") as f:
-    model, label_encoder = pickle.load(f)
+model, label_encoder = train_model()
 
 # Streamlit UI
 st.set_page_config(page_title="Iris KNN Classifier 🌼", layout="centered")
