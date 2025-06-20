@@ -1,6 +1,6 @@
 # 🌼 Iris Flower Predictor using KNN
 
-🔗 **Live App**: [Streamlit App Link Here](https://your-app-url.streamlit.app/)  
+🔗 **Live App**: https://knnproject-vansh.streamlit.app/
 🎯 **Model Used**: K-Nearest Neighbors (KNN)
 
 ---
